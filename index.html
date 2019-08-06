@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	
+    
+  </head>
+  <body>  
+    <div class="container">
+     
+        <div  class="jumbotron text-center">
+            <h1>MIC Recorder</h1>
+            <button class="btn btn-primary" type="button" id="recordButton">Record</button>
+            <button class="btn btn-success" type="button" id="pauseButton">pauseButton</button>
+            <button class="btn btn-danger" type="button" id="stopButton">Stop</button>
+
+            <div id="formats">Format: start recording to see sample rate</div>
+        <h3>Recordings</h3>
+        <ol id="recordingsList"></ol>
+        </div>
+        
+    </div>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
